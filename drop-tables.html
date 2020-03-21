@@ -6,22 +6,11 @@
 
 </head>
 
-
-
-
-
 	<!--********************************************************************************
 		********************************************************************************
 		********************************* DROP TABLES **********************************
 		********************************************************************************
 		********************************************************************************-->
-
-
-  <!--
-  				<tr>
-					<td>__symbol__</td><td style="background-color: lightblue">__prev_close__</td><td>__avg_vol__</td><td>__fell_to__</td><td>__at_time__</td><td><img style="height: 150px" src="__chart__"></td>
-				</tr>
--->
 
 
 	<h1 id="drop-tables" style="background-color: #D3D3D3">Drop Tables</h1>
@@ -32,12 +21,22 @@
 
 		<!-- *************************************** HIGH PERCENTAGE NON-HIGH-RISK *********************************************** --> 
 
+  <!--
+  				<tr>
+					<td>__date__<br>__year</td><td>__symbol__</td><td style="background-color: lightblue">__prev_close__</td><td>__avg_vol__</td><td>__fell_to_price__<br>(<span style="color: black; background-color:orange">__fell_to_percentage__</span>)</td><td>__at_time__</td><td>__vix__</td><td><img style="height: 150px" src="__chart__"></td><td></td>
+				</tr>
+-->
+
+
 			<table border="1" style="font-family: Arial; margin-left: 30px"> 
 				<tr>
-					<td colspan="6" style="font-size: 30px; text-align: center"><b>High-percentage, non-high-risk</b>
+					<td colspan="8" style="font-size: 30px; text-align: center; background-color: yellow"><b>High-percentage, non-high-risk
 				</tr>
 
 				<tr style="background-color: lightblue">
+					<th>
+						Date
+					</th>
 					<th style="width: 60px">
 						Symbol
 					</th>
@@ -54,68 +53,86 @@
 						At time
 					</th>
 					<th>
+						VIX
+					</th>
+					<th>
 						Chart
 					</th>
 					<th>
 						Notes
 					</th>
 				</tr>
-
-
   				<tr>
-					<td>SAEX</td><td style="background-color: lightblue">$8.10</td><td>39,477</td><td>33.09%</td><td><span style="color: black; background-color:red">12:12 PM PT</span></td><td><img style="height: 150px" src="SAEX_SEP_18_2018.gif"></td><td></td>
+					<td></td><td>SAEX</td><td style="background-color: lightblue">$8.10</td><td>39,477</td><td>(<span style="color: black; background-color:orange">33.09%</span>)</td><td><span style="color: black; background-color:red">12:12 PM PT</span></td><td></td><td><img style="height: 150px" src="SAEX_SEP_18_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>RMNI</td><td style="background-color: lightblue">$4.82</td><td>390,466</td><td>17%</td><td>7:11 AM PST</td><td><img style="height: 150px" src="RMNI_AUG_20_2018.gif"></td><td></td>
+					<td>Oct 15th<br>2018</td><td>AWSM</td><td style="background-color: lightblue">$7.30</td><td>431,371</td><td>$5.58<br>(<span style="color: black; background-color:orange">23.56</span>)</td><td>6:57 AM PT</td><td><img style="height: 150px" src="./vix/AWSM_OCT_15_2018.gif"></td><td><img style="height: 150px" src="AWSM_OCT_15_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>XBIO</td><td style="background-color: lightblue">$3.64</td><td>120,226</td><td>21.43%</td><td>6:40 AM PT</td><td><img style="height: 150px" src="XBIO_SEP_25_2018.gif"></td>
+					<td>Oct 25th<br>2018</td><td>PLAG<br><span style="color: black; background-color:red">CHINA</span></td><td style="background-color: lightblue">$5.99</td><td>2,095,830</td><td>$4.92<br>(<span style="color: black; background-color:orange">17.86</span>)<br><br>Then 21.86% at <span style="background-color: red">7:02 AM PT</span></td><td>6:45 AM PT</td><td><img style="height: 150px" src="./vix/PLAG_OCT_25_2018.gif"></td><td><img style="height: 150px" src="PLAG_OCT_25_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>GRNQ</td><td style="background-color: lightblue">$3.34</td><td>12,821</td><td>31.44%</td><td><span style="color: black; background-color:red">12:55 PM PST</span></td><td><img style="height: 150px" src="GRNQ_SEP_13_2018.gif"></td><td></td>
+					<td>Oct 11th<br>2018</td><td>CIFS<br><span style="color: black; background-color:red">CHINA, No volume</span></td><td style="background-color: lightblue">$5.42</td><td>None</td><td>$3.11<br>(<span style="color: black; background-color:orange">42.62</span>)</td><td>6:39 AM PT</td><td>24</td><td><img style="height: 150px" src="CIFS_OCT_11_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>XBIT</td><td style="background-color: lightblue">$2.78</td><td>38,182</td><td>23.38%</td><td>7:30 AM PST</td><td><img style="height: 150px" src="XBIT_SEP_11_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>VTVT</td><td style="background-color: lightblue">$1.88</td><td>1,292,967</td><td>19.68%</td><td>6:57 AM PT</td><td><img style="height: 150px" src="VTVT_APR_25_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>FPAY</td><td style="background-color: lightblue">$1.86</td><td>46,134</td><td>31%<br><br>Super fast</td><td>6:40 AM PT</td><td><img style="height: 150px" src="FPAY_SEP_25_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>ATAI</td><td style="background-color: lightblue">$1.72</td><td>$1.41</td><td>24.42%</td><td>7:20 AM PST</td><td><img style="height: 150px" src="ATAI_SEP_10_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>MOXC</td><td style="background-color: lightblue">$1.36</td><td>14,032</td><td>21%</td><td>7:48 AM PST</td><td><img style="height: 150px" src="MOXC_AUG_20_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>CIDM<br>(Slow day)</td><td style="background-color: lightblue">$1.28</td><td>29,439</td><td>17.30%</td><td>7:11 AM PT</td><td><img style="height: 150px" src="CIDM_SEP_20_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>ATAI</td><td style="background-color: lightblue">$1.21</td><td>276,871</td><td>18.10%</td><td>8:12 AM PST</td><td><img style="height: 150px" src="ATAI_SEP_20_2018.gif"></td><td></td>
-				</tr>
-  				<tr>
-					<td>MYSZ</td><td style="background-color: lightblue">$1.15</td><td>2,907,237</td><td>19.97%</td><td>6:40 AM PT</td><td><img style="height: 150px" src="MYSZ_SEP_18_2018.gif"></td><td></td>
+					<td></td><td>RMNI</td><td style="background-color: lightblue">$4.82</td><td>390,466</td><td>(<span style="color: black; background-color:orange">17%</span>)</td><td>7:11 AM PST</td><td></td><td><img style="height: 150px" src="RMNI_AUG_20_2018.gif"></td><td></td>
 				</tr>
 
   				<tr>
-					<td>CLOW (<span style="color: black; background-color:pink">PINK</span>)</td><td style="background-color: lightblue">$1.12</td><td>832,550</td><td>50.89%</td><td>7:01</td><td><img style="height: 150px" src="CLOW_SEP_14_2018.gif"></td><td></td>
+					<td></td><td>SDPI</td><td style="background-color: lightblue">$4.00</td><td>452,398</td><td>$2.62<br>(<span style="color: black; background-color:orange">34.50%</span>)</td><td>6:45 AM PT</td><td>23.75</td><td><img style="height: 150px" src="SDPI_OCT_11_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>USEG</td><td style="background-color: lightblue">$1.02</td><td>70,653</td><td>25</td><td>7:14 AM PST</td><td><img style="height: 150px" src="USEG_AUG_17_2018.gif"></td><td></td>
+					<td></td><td>XBIO</td><td style="background-color: lightblue">$3.64</td><td>120,226</td><td>(<span style="color: black; background-color:orange">21.43%</span>)</td><td>6:40 AM PT</td><td></td><td><img style="height: 150px" src="XBIO_SEP_25_2018.gif"></td><td>Recovered 4.5%</td>
+				</tr>
+  				<tr>
+					<td></td><td>GRNQ</td><td style="background-color: lightblue">$3.34</td><td>12,821</td><td>(<span style="color: black; background-color:orange">31.44%</span>)</td><td><span style="color: black; background-color:red">12:55 PM PST</span></td><td></td><td><img style="height: 150px" src="GRNQ_SEP_13_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>XBIT</td><td style="background-color: lightblue">$2.78</td><td>38,182</td><td>(<span style="color: black; background-color:orange">23.38%</span>)</td><td>7:30 AM PST</td><td></td><td><img style="height: 150px" src="XBIT_SEP_11_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>VTVT</td><td style="background-color: lightblue">$1.88</td><td>1,292,967</td><td>(<span style="color: black; background-color:orange">19.68%</span>)</td><td>6:57 AM PT</td><td></td><td><img style="height: 150px" src="VTVT_APR_25_2018.gif"></td><td></td>/
+				</tr>
+  				<tr>
+					<td></td><td>FPAY</td><td style="background-color: lightblue">$1.86</td><td>46,134</td><td>(<span style="color: black; background-color:orange">31%</span>)<br><br>Super fast</td><td>6:40 AM PT<br><br>Then 41.4% at <span style="background-color: red">11:44 AM PT</span></td><td></td><td><img style="height: 150px" src="FPAY_SEP_25_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>ATAI</td><td style="background-color: lightblue">$1.72</td><td>271,094</td><td>(<span style="color: black; background-color:orange">24.42%</span>)</td><td>7:20 AM PST</td><td></td><td><img style="height: 150px" src="ATAI_SEP_10_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>MOXC</td><td style="background-color: lightblue">$1.36</td><td>14,032</td><td>(<span style="color: black; background-color:orange">21%</span>)</td><td>7:48 AM PST</td><td></td><td><img style="height: 150px" src="MOXC_AUG_20_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>CIDM<br>(Slow day)</td><td style="background-color: lightblue">$1.28</td><td>29,439</td><td>(<span style="color: black; background-color:orange">17.30%</span>)</td><td>7:11 AM PT</td><td></td><td><img style="height: 150px" src="CIDM_SEP_20_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>ATAI</td><td style="background-color: lightblue">$1.21</td><td>276,871</td><td>(<span style="color: black; background-color:orange">18.10%</span>)</td><td>8:12 AM PST</td><td></td><td><img style="height: 150px" src="ATAI_SEP_20_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>MYSZ</td><td style="background-color: lightblue">$1.15</td><td>2,907,237</td><td>(<span style="color: black; background-color:orange">19.97%</span>)</td><td>6:40 AM PT</td><td></td><td><img style="height: 150px" src="MYSZ_SEP_18_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>CLOW (<span style="color: black; background-color:pink">PINK</span>)</td><td style="background-color: lightblue">$1.12</td><td>832,550</td><td>(<span style="color: black; background-color:orange">50.89%</span>)</td><td>7:01</td><td></td><td><img style="height: 150px" src="CLOW_SEP_14_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>USEG</td><td style="background-color: lightblue">$1.02</td><td>70,653</td><td>(<span style="color: black; background-color:orange">25%</span>)</td><td>7:14 AM PST</td><td></td><td><img style="height: 150px" src="USEG_AUG_17_2018.gif"></td><td></td>
+				</tr>
+  				<tr>
+					<td></td><td>SKYS</td><td style="background-color: lightblue">$0.8</td><td>19,677</td><td>$0.4279 (<span style="color: black; background-color:orange">46.51%</span>)</td><td><span style="color: black; background-color:red">1:00 PM PT</span></td><td></td><td><img style="height: 150px" src="SKYS_SEP_27_2018.gif"></td><td></td>
 				</tr>
 				<tr>
-					<td>ADOM</td><td style="background-color: lightblue">$0.56</td><td>243,621</td><td>20.35%</td><td>7:00 AM PST</td><td><img style="height: 150px" src="ADOM_SEP_09_2018.gif"></td><td></td>
+					<td></td><td>ADOM</td><td style="background-color: lightblue">$0.56</td><td>243,621</td><td>(<span style="color: black; background-color:orange">20.35%</span>)</td><td>7:00 AM PST</td><td></td><td><img style="height: 150px" src="ADOM_SEP_09_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>VTL</td><td style="background-color: lightblue">$0.4288</td><td>9,180,019</td><td>27.77%</td><td>7:48 AM PT</td><td><img style="height: 150px" src="VTL_SEP_19_2018.gif"></td><td></td>
+					<td></td><td>VTL</td><td style="background-color: lightblue">$0.4288</td><td>9,180,019</td><td>(<span style="color: black; background-color:orange">27.77%</span>)</td><td>7:48 AM PT</td><td></td><td><img style="height: 150px" src="VTL_SEP_19_2018.gif"></td><td></td>
 				</tr>
   				<tr>
-					<td>AMDA<br>(Slow day)</td><td style="background-color: lightblue">$0.2651</td><td>2,491,364</td><td>20.03%</td><td>6:52 AM PT</td><td><img style="height: 150px" src="AMDA_SEP_20_2018.gif"></td><td></td>
+					<td></td><td>AMDA<br>(Slow day)</td><td style="background-color: lightblue">$0.2651</td><td>2,491,364</td><td>(<span style="color: black; background-color:orange">20.03%</span>)</td><td>6:52 AM PT</td><td></td><td><img style="height: 150px" src="AMDA_SEP_20_2018.gif"></td><td></td>
 				</tr>
 
-
+  				<tr>
+					<td></td><td>DPWW (<span style="color: black; background-color:pink">PINK</span>)</td><td style="background-color: lightblue">$0.0056</td><td>3,195,716</td><td>$0.0009<br>(<span style="color: black; background-color:orange">83.93%</span>)</td><td>6:42 AM PT</td><td></td><td><img style="height: 150px" src="DPWW_OCT_04_2018.gif"></td><td></td>
+				</tr>
 
 
 			</table>
@@ -128,7 +145,7 @@
 
  <!--
  				<tr>
-					<td>__symbol__</td><td>__prev_close__</td><td>__avg_vol__</td><td style="background-color: lightblue">_jumped_to_%_yesterday__</td><td>__fell_to__</td><td>__at_time__</td><td>__chart__</td>
+					<td>__date__<br>__year__</td><td>__sybmol__</td><td>__prev__close</td><td>__avg__volume__</td><td style="background-color: lightblue">__spiked_up_what_percent__</td><td>__dropped_to_price__<br>(<span style="color: black; background-color:orange">__dropped_to_percent__%</span>)</td><td>__time__</td><td><img style="height: 150px" src="./dailycharts/__daily_file_name__.gif"></td><td><img style="height: 150px" src="./monthlycharts/__monthly_filename__.gif"></td><td></td>
 				</tr>
 -->
 
@@ -136,10 +153,13 @@
 		<td>
 			<table border="1" style="font-family: Arial; margin-left: 30px"> 
 				<tr>
-					<td colspan="7" style="font-size: 30px; text-align: center"><b>High-risk</b></td>
+					<td colspan="8" style="font-size: 30px; text-align: center; background-color: yellow"><b>High-risk</b></td>
 				</tr>
 
 				<tr style="background-color: lightblue">
+					<th>
+						Year
+					</th>
 					<th style="width: 60px">
 						Symbol
 					</th>
@@ -158,6 +178,9 @@
 					<th>
 						At time
 					</th>
+					<th>	
+						2-day VIX
+					</th>					
 					<th>
 						Chart
 					</th>
@@ -166,42 +189,184 @@
 					</th>
 				</tr>
 
+
  				<tr>
-					<td>OHGI</td><td>$3.08</td><td>777,715</td><td style="background-color: lightblue">185%</td><td>32.47%</td><td>7:15 AM PT</td><td><img style="height: 150px" src="OHGI_12_15_2017.gif"></td><td></td>
-				</tr>
- 				<tr>
-					<td>CUR</td><td>$3.09</td><td>1,346,960</td><td style="background-color: lightblue">175%</td><td>29.45%</td><td>7:23 AM PST</td><td><img style="height: 150px" src="CUR_DEC_06_2017.gif"></td><td></td>
-				</tr>
- 				<tr>
-					<td>ACST</td><td>$3.10</td><td>347,149</td><td style="background-color: lightblue">146%</td><td>29.68%</td><td>8:14 AM PST</td><td><img style="height: 150px" src="ACST_NOV_21_2017.gif"></td><td></td>
+					<td>Nov 28th<br>2018<br>Slow day</td><td>ASNS</td><td>$4.12</td><td>150,103</td><td style="background-color: lightblue">255.17%</td><td>$2.98<br>(<span style="color: black; background-color:orange">27.67%</span>)</td><td>6:41 AM PT</td><td><img style="height: 150px" src="./dailycharts/ASNS_NOV_28_2018.gif"></td><td><img style="height: 150px" src="./monthlycharts/ASNS_NOV_28_2018.gif"></td><td>This one also dropped to $3.16 (23.30%) at 6:30 AM PT and recovered about 2.8%</td>
 				</tr>
 
  				<tr>
-					<td>AGRX</td><td>$0.67</td><td>17,600,434</td><td style="background-color: lightblue">116.13%</td><td>31%</td><td>6:14 AM PST</td><td><img style="height: 150px" src="AGRX_SEP_12_2018.gif"></td><td></td>
+					<td></td><td>OHGI</td><td>$3.08</td><td>777,715</td><td style="background-color: lightblue">185%</td><td>(<span style="color: black; background-color:orange">32.47%</span>)</td><td>7:15 AM PT</td><td></td><td><img style="height: 150px" src="OHGI_12_15_2017.gif"></td><td></td>
 				</tr>
  				<tr>
-					<td>NBEV</td><td>$7.85</td><td>18,293,929</td><td style="background-color: lightblue">79.63%</td><td>27.26%</td><td>7:47 AM PT</td><td><img style="height: 150px" src="NBEV_SEP_21_2018.gif"></td><td></td>
+					<td></td><td>CUR</td><td>$3.09</td><td>1,346,960</td><td style="background-color: lightblue">175%</td><td>(<span style="color: black; background-color:orange">29.45%</span>)</td><td>7:23 AM PST</td><td></td><td><img style="height: 150px" src="CUR_DEC_06_2017.gif"></td><td></td>
 				</tr>
  				<tr>
-					<td>RCON</td><td>$3.03</td><td>1,320,740</td><td style="background-color: lightblue">78.23%</td><td>25.08%</td><td>11:17 PT</td><td><img style="height: 150px" src="RCON_JAN_17_2018.gif"></td><td></td>
-				</tr>
-				<tr>
-					<td>CEI</td><td>$0.2763</td><td>3,321,656</td><td style="background-color: lightblue">71%</td><td>27.61%</td><td>6:13 AM PST</td><td><img style="height: 150px" src="CEI_NOV_09_2017.gif"></td><td></td>
-				</tr>
-				<tr>
-					<td>GLBS</td><td>$1.88</td><td>681,572</td><td style="background-color: lightblue">43%</td><td>25%</td><td>5:32 AM PST</td><td><img style="height: 150px" src="GLBS_NOV_08_2017.gif"></td><td></td>
-				</tr>
- 				<tr>
-					<td>OGEN</td><td>$0.93</td><td>2,804,741</td><td style="background-color: lightblue">29.17%</td><td>40.48%<br><br>Super fast</td><td>6:04 AM PT</td><td><img style="height: 150px" src="OGEN_SEP_25_2018.gif"></td><td></td>
-				</tr>
- 				<tr>
-					<td>MYSZ</td><td>$1.35</td><td>984,084</td><td style="background-color: lightblue">28.57%</td><td>17.04%</td><td>6:41 AM pst</td><td><img style="height: 150px" src="MYSZ_SEP_17_2018.gif"></td><td></td>
+					<td></td><td>GRNQ</td><td>$9.90</td><td><span style="color: black; background-color:red">8,368</span></td><td style="background-color: lightblue">170.62%</td><td>$6.20<br>(<span style="color: black; background-color:orange">37.37</span>)</td><td>7:21 AM PT</td><td></td><td><img style="height: 150px" src="GRNQ_OCT_02_2018.gif"></td><td></td>
 				</tr>
 
+ 				<tr>
+					<td>Nov 26<br>2018</td><td>TIS</td><td>$1.80</td><td>480,000</td><td style="background-color: lightblue">164.71%</td><td>$1.35<br>(<span style="color: black; background-color:orange">25%</span>)</td><td>6:56 AM PT</td><td></td><td><img style="height: 150px" src="./monthlycharts/TIS_NOV_26_2018.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td></td><td>JAGX</td><td>$1.68</td><td>278,688</td><td style="background-color: lightblue">158%</td><td>$1.18 (<span style="color: black; background-color:orange">29.76%</span>) </td><td>7:02 AM PT<br><br>Then $1.04 (38.10%) at 8:40 AM PT</td><td></td><td><img style="height: 150px" src="JAGX_SEP_26_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td></td><td>ACST</td><td>$3.10</td><td>347,149</td><td style="background-color: lightblue">146%</td><td>(<span style="color: black; background-color:orange">29.68%</span>)</td><td>8:14 AM PST</td><td></td><td><img style="height: 150px" src="ACST_NOV_21_2017.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td></td><td>AGRX</td><td>$0.67</td><td>17,600,434</td><td style="background-color: lightblue">116.13%</td><td>(<span style="color: black; background-color:orange">31%</span>)</td><td>6:14 AM PST</td><td></td><td><img style="height: 150px" src="AGRX_SEP_12_2018.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td>Oct 25<br>2018</td><td>NAUH</td><td>$1.10</td><td>55,298</td><td style="background-color: lightblue">115.69%</td><td>$0.8101<br>(<span style="color: black; background-color:orange">26.35%</span>) </td><td>7:17 AM PT<br><br>Then $0.74 (<span style="color: black; background-color:orange">32.73</span>) at 8:38 AM PT</td><td><img style="height: 150px" src="./vix/NAUH_OCT_25_2018_2.gif"></td><td><img style="height: 150px" src="NAUH_OCT_25_2018.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td></td><td>INPX</td><td>$0.42</td><td>9,817,659</td><td style="background-color: lightblue">104.88</td><td>$0.25<br>(<span style="color: black; background-color:orange">40.48</span>)</td><td>7:48 AM PT</td><td></td><td><img style="height: 150px" src="INPX_OCT_04_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td>Oct 23rd<br>2018</td><td>ESEA</td><td>$2.40</td><td>ETrade: 0<br><br>Yahoo Finance: 375,650</td><td style="background-color: lightblue">81.82%</td><td>$1.68<br>(<span style="color: black; background-color:orange">30.00%</span>)</td><td>6:50 AM PT</td><td><img style="height: 150px" src="./vix/ESEA_OCT_23_2018.gif"></td><td><img style="height: 150px" src="ESEA_OCT_23_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td></td><td>NBEV</td><td>$7.85</td><td>18,293,929</td><td style="background-color: lightblue">79.63%</td><td>(<span style="color: black; background-color:orange">27.26%</span>)</td><td>7:47 AM PT</td><td></td><td><img style="height: 150px" src="NBEV_SEP_21_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td></td><td>RCON</td><td>$3.03</td><td>1,320,740</td><td style="background-color: lightblue">78.23%</td><td>(<span style="color: black; background-color:orange">25.08%</span>)</td><td>11:17 PT</td><td></td><td><img style="height: 150px" src="RCON_JAN_17_2018.gif"></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td>CEI</td><td>$0.2763</td><td>3,321,656</td><td style="background-color: lightblue">71%</td><td>(<span style="color: black; background-color:orange">27.61%</span>)</td><td>6:13 AM PST</td><td></td><td><img style="height: 150px" src="CEI_NOV_09_2017.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td></td><td>NBEV</td><td>$8.95</td><td>10,382,707</td><td style="background-color: lightblue">67.29%</td><td>$6.60<br>(<span style="color: black; background-color:orange">26.26%</span>)</td><td>7:09 AM PT</td><td></td><td><img style="height: 150px" src="NBEV_OCT_02_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td>Oct 17th<br>2018</td><td>BLNK</td><td>$3.56</td><td>148,658</td><td style="background-color: lightblue">62.56%</td><td>$2.62<br>(<span style="color: black; background-color:orange">26.4%</span>)</td><td>6:46 AM<br>October</td><td><img style="height: 150px" src="./vix/BLNK_OCT_17_2018.gif"></td><td><img style="height: 150px" src="BLNK_OCT_17_1028.gif"></td><td></td>
+				</tr>
+
+				<tr>
+					<td></td><td>GLBS</td><td>$1.88</td><td>681,572</td><td style="background-color: lightblue">43%</td><td>(<span style="color: black; background-color:orange">25%</span>)</td><td>5:32 AM PST</td><td></td><td><img style="height: 150px" src="GLBS_NOV_08_2017.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td>Nov 12<br>2018</td><td>NVLN</td><td>$1.71</td><td>4,305,422</td><td style="background-color: lightblue">36.80%</td><td>$1.30<br>(<span style="color: black; background-color:orange">23.39%</span>)</td><td>6:46 AM PT</td><td><img style="height: 150px" src="./dailycharts/NVLN_NOV_12_2018.gif"></td><td><img style="height: 150px" src="./monthlycharts/NVLN_NOV_12_2018.gif"></td><td></td>
+				</tr>
+
+ 				<tr>
+					<td></td><td>OGEN</td><td>$0.93</td><td>2,804,741</td><td style="background-color: lightblue">29.17%<br><span style="background-color: orange">PENNY</span></td><td>(<span style="color: black; background-color:orange">40.48%</span>)<br><br>Super fast</td><td>6:04 AM PT</td><td></td><td><img style="height: 150px" src="OGEN_SEP_25_2018.gif"></td><td>Recovered all the way</td>
+				</tr>
+
+ 				<tr>
+					<td></td><td>MYSZ</td><td>$1.35</td><td>984,084</td><td style="background-color: lightblue">28.57%</td><td>(<span style="color: black; background-color:orange">17.04%</span>)<br><br><span style="color: black; background-color:lightgreen">Choose 23%</span></td><td>6:41 AM pst</td><td></td><td><img style="height: 150px" src="MYSZ_SEP_17_2018.gif"></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td>CLRB</td><td>$3.35</td><td>249,395</td><td style="background-color: lightblue">24.54%</td><td>$2.78 (<span style="color: black; background-color:orange">17.01</span>)<br><br><span style="color: black; background-color:lightgreen">Choose 23%</span></td><td>6:55 AM PT</td><td></td><td><img style="height: 150px" src="CLRB_SEP_27_2018.gif"></td><td></td>
+				</tr>
+ 				<tr>
+					<td></td><td>VLRX</td><td>$1.60</td><td>519,015</td><td style="background-color: lightblue">21.21%</td><td>$1.22 (<span style="color: black; background-color:orange">23.75%</span>)</td><td>7:01 AM PT</td><td></td><td><img style="height: 150px" src="VLRX_SEP_28_2018.gif"></td><td></td>
+				</tr>
 
 			</table>
 		</td>
 	</tr>	
+	<tr>
+		<td>
+
+<!-- **************************************** OFFERINGS ********************************************** -->
+
+<!--
+  				<tr>
+					<td>__symbol__</td><td style="background-color: lightblue">__offering_price__</td><td>__avg_vol__</td><td>__fell_to__(<span style="color: black; background-color:orange">__fell_to_percentage__)</span></td><td>__at_time__</td><td><img style="height: 150px" src="__chart__"></td><td></td>
+				</tr>
+-->
+
+
+
+			<table border="1" style="font-family: Arial; margin-left: 30px"> 
+				<tr>
+					<td colspan="8" style="font-size: 30px; text-align: center; background-color: yellow"><b>Offerings</b>
+				</tr>
+
+				<tr style="background-color: lightblue">
+					<th style="width: 60px">
+						Symbol
+					</th>
+					<th>
+						Offering Price
+					</th>
+					<th>
+						Avg. Volume
+					</th>
+					<th>
+						Fell to
+					</th>
+					<th>
+						At time
+					</th>
+					<th>
+						Chart
+					</th>
+					<th>
+						Notes
+					</th>
+				</tr>
+
+  				<tr>
+					<td>FPAY</td><td style="background-color: lightblue">$1.00</td><td>49,994</td><td>$0.75 (<span style="color: black; background-color:orange">25%</span>)</td><td>5:43 AM PT</td><td><img style="height: 150px" src="FPAY_SEP_26_2018.gif"></td><td></td>
+				</tr>
+			</table>
+
+		</td>
+
+		<td>
+
+<!-- **************************************** PHASE II ********************************************* -->
+
+<!--
+  				<tr>
+					<td>__symbol__</td><td style="background-color: lightblue">__previous_close__</td><td>__avg_vol__</td><td>__fell_to__(<span style="color: black; background-color:orange">__fell_to_percentage__)</span></td><td>__at_time__</td><td><img style="height: 150px" src="__chart__"></td><td></td>
+				</tr>
+-->
+
+			<table border="1" style="font-family: Arial; margin-left: 30px"> 
+				<tr>
+					<td colspan="8" style="font-size: 30px; text-align: center; background-color: yellow"><b>Phase II</b>
+				</tr>
+
+				<tr style="background-color: lightblue">
+					<th style="width: 60px">
+						Symbol
+					</th>
+					<th>
+						Previous Close
+					</th>
+					<th>
+						Avg. Volume
+					</th>
+					<th>
+						Fell to
+					</th>
+					<th>
+						At time
+					</th>
+					<th>
+						Chart
+					</th>
+					<th>
+						Notes
+					</th>
+				</tr>
+
+  				<tr>
+					<td>GERN</td><td style="background-color: lightblue">$5.35</td><td>10,150,227</td><td>$1.90 (<span style="color: black; background-color:orange">69.50%</span>)</td><td>6:22 AM PT<br><br>Then to $1.50 (<span style="color: black; background-color:orange">75.92%</span>) at 6:30 AM PT</td><td><img style="height: 150px" src="	GERN_SEP_27_2018.gif"></td><td></td>
+				</tr>
+			</table>
+
+
+
+		</td>
+	</tr>
 
 	</table>
 
